@@ -18,7 +18,7 @@ Welcome to **MoodMate**, your dedicated mental health support chatbot designed t
 
 Join the MindMend community today and take a proactive step towards a healthier, happier you. Because everyone deserves to feel understood, supported, and valued.
 
-## User Process Flow Diagram
+## Website Workflow Diagram
 
 ![alt text](assets/image.png)
 
@@ -58,6 +58,4 @@ To use this repository, follow these steps:
     ```
 6. **Open the HTML File**:
     Run the HTML file (index.html) in any browser of choice 
-7. **Explore Weekend Plans**:
-    Input your location and preferences into the app to receive personalized weekend plans.
-8. **Have a good time with your mate!**
+7. **Have a good time with your mate!**
