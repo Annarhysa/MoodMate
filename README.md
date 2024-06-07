@@ -1,10 +1,10 @@
 # MoodMate: A mate for your every mood
 
-Welcome to **MoodMate**, your dedicated mental health support chatbot designed to be a beacon of hope and tranquility in your daily life. Whether you’re dealing with stress, anxiety, or simply need someone to talk to, MindMend is here to listen and guide you through your emotional journey.
+Welcome to **MoodMate**, your dedicated mental health support chatbot designed to be a beacon of hope and tranquility in your daily life. Whether you’re dealing with stress, anxiety, or simply need someone to talk to, MoodMate is here to listen and guide you through your emotional journey.
 
 ## Features
 
-- **24/7 Availability:** MindMend is always here for you, day or night, ready to provide support whenever you need it.
+- **24/7 Availability:** MoodMate is always here for you, day or night, ready to provide support whenever you need it.
 - **Personalized Conversations:** Tailored responses and guidance based on your unique needs and emotional state.
 - **Mindfulness Exercises:** Access to a variety of mindfulness and relaxation exercises to help you stay grounded and centered.
 - **Mood Tracking:** Keep track of your emotional health over time with our easy-to-use mood tracking feature.
@@ -13,12 +13,12 @@ Welcome to **MoodMate**, your dedicated mental health support chatbot designed t
 ## Why Choose MoodMate?
 
 - **Confidential and Secure:** Your privacy is our priority. All conversations are encrypted and confidential.
-- **Empathetic and Non-judgmental:** MindMend provides a safe space where you can express yourself freely without fear of judgment.
-- **AI-Driven Insights:** Leveraging advanced AI, MindMend offers insightful advice and coping strategies based on the latest psychological research.
+- **Empathetic and Non-judgmental:** MoodMate provides a safe space where you can express yourself freely without fear of judgment.
+- **AI-Driven Insights:** Leveraging advanced AI, MoodMate offers insightful advice and coping strategies based on the latest psychological research.
 
-Join the MindMend community today and take a proactive step towards a healthier, happier you. Because everyone deserves to feel understood, supported, and valued.
+Join the MoodMate community today and take a proactive step towards a healthier, happier you. Because everyone deserves to feel understood, supported, and valued.
 
-## User Process Flow Diagram
+## Website Workflow Diagram
 
 ![alt text](assets/image.png)
 
@@ -58,6 +58,4 @@ To use this repository, follow these steps:
     ```
 6. **Open the HTML File**:
     Run the HTML file (index.html) in any browser of choice 
-7. **Explore Weekend Plans**:
-    Input your location and preferences into the app to receive personalized weekend plans.
-8. **Have a good time with your mate!**
+7. **Have a good time with your mate!**
