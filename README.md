@@ -1,4 +1,4 @@
-# MoodMate Your Companion in Mental Wellness
+# MoodMate: A mate for your every mood
 
 Welcome to **MoodMate**, your dedicated mental health support chatbot designed to be a beacon of hope and tranquility in your daily life. Whether you’re dealing with stress, anxiety, or simply need someone to talk to, MindMend is here to listen and guide you through your emotional journey.
 
@@ -17,6 +17,10 @@ Welcome to **MoodMate**, your dedicated mental health support chatbot designed t
 - **AI-Driven Insights:** Leveraging advanced AI, MindMend offers insightful advice and coping strategies based on the latest psychological research.
 
 Join the MindMend community today and take a proactive step towards a healthier, happier you. Because everyone deserves to feel understood, supported, and valued.
+
+## User Process Flow Diagram
+
+![alt text](assets/image.png)
 
 ## How to use this repository
 
@@ -44,13 +48,16 @@ To use this repository, follow these steps:
     pip install -r requirements.txt
     ```
 5. **Run the Flask App**:
+    - First go to the required directory: 
+    ```
+    cd backend
+    ```
+    - Now run the flask app in backend:
     ```
     python app.py
     ```
 6. **Open the HTML File**:
-    Run the HTML file (index.html)
+    Run the HTML file (index.html) in any browser of choice 
 7. **Explore Weekend Plans**:
     Input your location and preferences into the app to receive personalized weekend plans.
 8. **Have a good time with your mate!**
-
-**MoodMate: A mate for your every mood**
