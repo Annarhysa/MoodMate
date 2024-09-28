@@ -43,5 +43,6 @@ class MentalHealthModel:
         return np.random.choice(self.general_responses.get(category, ["I'm sorry, I don't have an answer for that. Please contact a mental health professional."]))
 
 # Example usage
-# model = MentalHealthModel('data/clustered_faq.csv')
-# print(model.get_answer('I am feeling really down. What should I do?'))
+# model = MentalHealthModel('data/data.csv')
+# print(model.get_answer("I'm feeling really sad and hopeless."))
+
