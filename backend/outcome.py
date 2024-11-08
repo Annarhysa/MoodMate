@@ -3,6 +3,7 @@ import numpy as np
 import matplotlib.pyplot as plt
 from model import MentalHealthModel
 from sklearn.metrics import accuracy_score, precision_score, recall_score, f1_score
+import os
 
 # Mock dataset
 data = pd.read_csv("./data/response.csv")
@@ -37,4 +38,6 @@ plt.bar(metrics, scores, color='skyblue')
 plt.ylim(0, 1)
 plt.ylabel('Score')
 plt.title('Chatbot Model Performance')
-plt.show()
+
+os.makedirs(os.path.dirname('./plots/metrics_plot.png'), exist_ok=True)
+plt.savefig('./plots/metrics_plot.png')

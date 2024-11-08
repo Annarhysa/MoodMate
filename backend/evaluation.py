@@ -57,7 +57,6 @@ def visualize_performance(avg_rouge_scores, save_path='./plots/performance_plot.
     # Save the plot to the specified path
     os.makedirs(os.path.dirname(save_path), exist_ok=True)
     plt.savefig(save_path)
-    plt.show()
 
 # Example usage
 if __name__ == "__main__":
