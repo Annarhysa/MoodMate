@@ -1,6 +1,7 @@
 import pandas as pd
 from model import MentalHealthModel
 from rouge_score import rouge_scorer
+import matplotlib.pyplot as plt
 
 def calculate_accuracy_and_rouge(model, test_data_path):
     # Load the labeled dataset
@@ -13,8 +14,8 @@ def calculate_accuracy_and_rouge(model, test_data_path):
     scorer = rouge_scorer.RougeScorer(['rouge1', 'rouge2', 'rougeL'], use_stemmer=True)
     
     for index, row in test_data.iterrows():
-        user_question = row['Questions']
-        actual_answer = row['Answers']
+        user_question = row['User_Question']
+        actual_answer = row['Expected_Response']
         
         # Predict the answer using the model
         predicted_answer = model.get_answer(user_question)
@@ -41,9 +42,23 @@ def calculate_accuracy_and_rouge(model, test_data_path):
     
     return accuracy, avg_rouge_scores
 
+def visualize_performance(avg_rouge_scores):
+    # Visualize the performance metrics
+    metrics = ['ROUGE-1', 'ROUGE-2', 'ROUGE-L']
+    scores = [avg_rouge_scores['rouge1'], avg_rouge_scores['rouge2'], avg_rouge_scores['rougeL']]
+
+    plt.figure(figsize=(10, 6))
+    plt.bar(metrics, scores, color='skyblue')
+    plt.ylim(0, 1)
+    plt.ylabel('Score')
+    plt.title('Chatbot Model Performance')
+    plt.show()
+
 # Example usage
 if __name__ == "__main__":
     model = MentalHealthModel('data/data.csv')
-    accuracy, avg_rouge_scores = calculate_accuracy_and_rouge(model, 'data/test_data.csv')
+    accuracy, avg_rouge_scores = calculate_accuracy_and_rouge(model, 'data/response.csv')
     print(f"Model Accuracy: {accuracy:.2f}")
     print(f"Average ROUGE Scores: {avg_rouge_scores}")
+    
+    visualize_performance(avg_rouge_scores)
