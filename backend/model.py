@@ -42,7 +42,27 @@ class MentalHealthModel:
         category = 'Category_' + str(cluster)
         return np.random.choice(self.general_responses.get(category, ["I'm sorry, I don't have an answer for that. Please contact a mental health professional."]))
 
+'''
 # Example usage
-# model = MentalHealthModel('data/data.csv')
-# print(model.get_answer("I'm feeling really sad and hopeless."))
+model = MentalHealthModel('data/data.csv')
 
+data = {
+    'User_Question': [
+        "I feel constant worry and can't seem to control it.",
+        "I don't find joy in things I used to enjoy.",
+        "I get easily startled and have flashbacks of a traumatic event.",
+        "I'm feeling so hopeless and have no energy to do anything.",
+        "I find it difficult to trust people and feel anxious in social situations."
+    ]}
+
+responses = {'User_Question': [], 'Predicted_Response': []}
+
+for question in data['User_Question']:
+    predicted_response = model.get_answer(question)
+    responses['User_Question'].append(question)
+    responses['Predicted_Response'].append(predicted_response)
+
+# Convert responses to DataFrame for better visualization
+responses_df = pd.DataFrame(responses)
+responses_df.to_csv("./data/response.csv")
+'''
