@@ -2,6 +2,7 @@ import pandas as pd
 from model import MentalHealthModel
 from rouge_score import rouge_scorer
 import matplotlib.pyplot as plt
+import os
 
 def calculate_accuracy_and_rouge(model, test_data_path):
     # Load the labeled dataset
@@ -42,7 +43,7 @@ def calculate_accuracy_and_rouge(model, test_data_path):
     
     return accuracy, avg_rouge_scores
 
-def visualize_performance(avg_rouge_scores):
+def visualize_performance(avg_rouge_scores, save_path='./plots/performance_plot.png'):
     # Visualize the performance metrics
     metrics = ['ROUGE-1', 'ROUGE-2', 'ROUGE-L']
     scores = [avg_rouge_scores['rouge1'], avg_rouge_scores['rouge2'], avg_rouge_scores['rougeL']]
@@ -52,6 +53,10 @@ def visualize_performance(avg_rouge_scores):
     plt.ylim(0, 1)
     plt.ylabel('Score')
     plt.title('Chatbot Model Performance')
+    
+    # Save the plot to the specified path
+    os.makedirs(os.path.dirname(save_path), exist_ok=True)
+    plt.savefig(save_path)
     plt.show()
 
 # Example usage
